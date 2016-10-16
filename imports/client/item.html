@@ -1,0 +1,37 @@
+<template name="itemCard">
+
+	<div class="item-card-wrapper">
+		<div class="first-row-wrapper">
+			<div class="text-data">
+				<h4>{{title}}</h4>
+				<h5>{{merchant}}</h5>
+				<div class="btn send-payment">
+					<h4>{{price}} <span class="glyphicon glyphicon-usd"></span></h4>
+					<p>Pay now</p>
+				</div>
+			</div>
+			<div class="img-container-wrapper">
+				<img class="img-container" src={{image}}>
+			</div>
+		</div>
+		
+		<div>
+			<div class="action-box">
+				{{#if status}}
+					<div class="btn chat-now" onmouseover="this.style.background='#2EFE2E';" onmouseout="this.style.background='#BCF5A9';">
+						<p>Currently Online</p>
+						<p><span class="glyphicon glyphicon-user"></span> Chat now....</p> 	
+					</div>
+				{{else}}
+					<div class="btn send-sms" onmouseover="this.style.background='#FE2E2E';" onmouseout="this.style.background='#F6CEEC';">
+						<p>Currently offline</p>
+						<p><span class="glyphicon glyphicon-phone"></span> Notify Me by SMS</p>
+					</div>
+					<div class="btn chat-with-bot">
+						<p class="bot-text"><span class="glyphicon glyphicon-pawn"></span>Chat with the seller BOT!</p>
+					</div>
+				{{/if}}
+			</div>
+		</div>
+	</div>
+</template>

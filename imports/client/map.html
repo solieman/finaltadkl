@@ -1,0 +1,16 @@
+<template name="mapPostsList">
+	<div class=".mapPostsList-wrapper">		
+	    <div class="content">
+	    	{{#each items}}
+	    		<div>
+	    			{{>itemCard this}}
+	    		</div>
+	        {{/each}}
+	    </div>
+   		<button class="add-marker">Click to show on map</button>
+
+	    <div id="map">
+			<div id="map-canvas" class="map-canvas-class"></div>
+		</div>		
+	</div>
+</template>

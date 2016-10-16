@@ -1,0 +1,25 @@
+<template name="chat">
+	{{#if showHideBot}}
+		<div class="chat-wrapper">
+	  		<iframe class="chat-iframe" src="https://webchat.botframework.com/embed/TADHackShoppingBot?s=ft4GNbi7ciE.cwA.aC8.y_lFKcFgaIZLizWb3KPhMYkXhYsMyjRPfgZ4uI24Lms" style="height: 502px; max-height: 502px;"></iframe>
+	  	</div>	  	
+	  	<!--<div class="btn make-order-from-bot">
+	  		<p><span class="glyphicon glyphicon-user"></span></p>
+	  	</div>-->
+	 {{/if}}
+
+	 {{#if showHideConv}}
+		<div class="chat-wrapper">
+	  		<iframe class="chat-iframe" src="http://192.168.42.64:7080/" style="height: 502px; max-height: 502px;"></iframe>
+	  	</div>
+	 {{/if}}
+
+	 {{#if showHideResults}}
+	 	<div class="response-wrapper">
+	  		<p>
+	  			{{theLastResponse}}
+	  		</p>
+	  	</div>
+	 {{/if}}
+
+</template>

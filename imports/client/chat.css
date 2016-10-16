@@ -1,0 +1,13 @@
+.chat-wrapper {
+	width: 40em;
+	border: dashed 1px;
+}
+
+.chat-iframe {
+	width: 100%;
+}
+
+.response-wrapper {
+	width: 24em;
+	word-break: break-word;
+}

@@ -1,0 +1,14 @@
+/* CSS declarations go here */
+body {
+    overflow-y: scroll; 
+}
+
+.content-wrapper {
+	display: flex;
+	flex-flow: row;
+}
+
+.map-wrapper {
+	width: 30em;
+
+}
